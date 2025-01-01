@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surat to Amelia</title>
+    <style>
+      /* Body and basic reset */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Times New Roman", serif;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+      }
+
+      /* Moon image styling */
+      .moon img {
+        width: 100%; /* Makes the moon image responsive */
+        max-width: 300px; /* Sets a maximum size */
+        height: auto; /* Maintains the aspect ratio */
+        position: fixed;
+        top: -15%; /* Positions moon at top */
+        right: -25%; /* Positions moon to the right */
+        z-index: 1; /* Puts the moon behind the content */
+      }
+
+      .audio {
+        z-index: 1;
+      }
+
+      /* Surat container styling */
+      #surat-container {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+        text-shadow: 0px 4px 8px rgba(255, 255, 255, 0.88);
+        font-family: "Times New Roman", serif;
+        color: #fff;
+        z-index: 10;
+        background-color: transparent;
+        width: 80%;
+        max-width: 600px;
+      }
+
+      #surat-container h1 {
+        font-size: 1.3rem;
+      }
+
+      /* Specific styling for the first paragraph */
+      #surat-container p:first-child {
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      /* Styling for the last paragraph */
+      #surat-container p:last-child {
+        font-size: 18px;
+      }
+
+      /* Styling for justified text */
+      #surat-container p {
+        text-align: justify;
+        font-size: 16px;
+      }
+
+      /* Responsive text scaling */
+      @media screen and (max-width: 768px) {
+        #surat-container p:first-child {
+          font-size: 22px;
+        }
+
+        #surat-container p:last-child {
+          font-size: 16px;
+        }
+
+        #surat-container p {
+          font-size: 14px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        #surat-container {
+          width: 90%;
+        }
+
+        #surat-container p:first-child {
+          font-size: 20px;
+        }
+
+        #surat-container p:last-child {
+          font-size: 14px;
+        }
+
+        #surat-container p {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <audio autoplay loop>
+      <source src="musik/blue.mp3" type="audio/mp3" />
+    </audio>
+
+    <div class="moon">
+      <img src="moon.png" alt="Glowing Moon" />
+    </div>
+    <div id="surat-container">
+      <h1>Dear, Pacarku yang Paling Cantik dan Kiowoooo,</h1>
+      <p>
+        Sebelumnya aku mau ucapin selamat Tahun baru, dan selamat untuk Kita
+        yang udah ngelewatin banyak hal di tahun ini. Aku mau bilang makasih
+        buat kamu, kamu bukan cuma jadi support system yang baik untuk aku, bisa
+        di bilang kamu segalanya buat aku. walapun kita masih sering berantem
+        dan masih suka salah pengertian...tapi kita masih mau obrolin dan clear
+        in masalah masalah itu, ya walapun pada dasar nya kita butuh Waktu buat
+        ngertiin satu sama lain mehehehe, aku bakalan terus berusaha buat
+        mahamin kamu... jadi kamu gak perlu khawatir soal itu ya sayang, aku
+        tetep bakal jadi orang yang mau mencintaimu secara ugal-ugalan.ohh
+        yaa... harapan aku buat kedepan itu...semoga kita bisa saling memahami
+        lagi, lebih di turunin egonya lagi, lebih peka lagi.. banyaksihh harapan
+        kedepan nya tuh tapi aku berusaha satu per satu untuk improve diri aku
+        untuk kamu lagi sayang... dan yang paling penting bukan di hari special
+        ini aja aku berharap di setiap hari nya biar kita bisa 1 atap hehehehe,
+        mungkinn itu aja yang bisa aku ungkapin...sekalii lagi Aku Ucapinn
+        MAAACIIII SAYANGGGGG.
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
